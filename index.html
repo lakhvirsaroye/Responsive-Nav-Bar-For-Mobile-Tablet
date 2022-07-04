@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<title>Document</title>
+</head>
+<body>
+	<style>
+     *{
+		 padding: 0;
+		 margin: 0;
+		 text-decoration: none;
+		 list-style: none;
+		 box-sizing: border-box;
+	 }
+
+	 body{
+		 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	 }
+
+	 nav{
+		 background: blueviolet;
+		 height: 80px;
+		 width: 100%;
+	 }
+
+     label.logo{
+		color: white;
+		font-size: 35px;
+		line-height: 80px;
+		padding: 0 100px;
+		font-weight: bold;
+	}
+
+     nav ul{
+		 float: right;
+		 margin-right: 20px;
+
+	 }
+
+	 nav ul li{
+		 display: inline-block;
+		 line-height: 80px;
+		 margin: 0 5px;
+	 }
+
+	 nav ul li a{
+		 color: white;
+		 font-size: 17px;
+		 text-transform: uppercase;
+		 padding: 7px 15px;
+		 border-radius: 4px;
+	 }
+
+	 a:hover{
+		 background: rgb(222, 95, 95);
+	 }
+
+	 #check{
+		 display: none;
+	 }
+
+	 .fa fa-bars{
+		 display: none;
+	 }
+
+	 @media screen and (max-width: 929px){
+		 nav ul{
+			 background-color: black;
+             position: fixed;
+			 top: -100%;
+			 left: 0;
+			 transition: all 1.5s ease-in-out;
+			 border-bottom-right-radius: 10px;
+			 border-bottom-left-radius: 10px;
+			}
+			
+			ul li{
+				display: block;
+				width: 100%;
+				height: 100%;
+				margin: auto;
+		 }
+
+		 ul li a{
+			 display: block;
+			 margin: auto;
+		 }
+
+		 a:hover{
+			 background-color: transparent;
+			 color: rgb(221, 179, 100);
+		 }
+
+		 #check:checked ~ ul{
+			 top: 78px;
+		 }
+
+		 .checkbtn{
+			 font-size: 45px;
+			 color: white;
+			 float: right;
+			 margin-right: 40px;
+			 line-height: 80px;
+		 }
+	 }
+
+	</style>
+</body>
+ <nav>
+	 <label class="logo">DESIGN</label>
+
+	 <input type="checkbox" id="check">
+     <label for="check" class="checkbtn" >
+	 <i class="fa fa-bars"></i>
+	 </label>
+	 
+	 <ul>
+		 <li> <a href="#">HOME</a></li>
+		 <li> <a href="#">SERVICES</a></li>
+		 <li> <a href="#">PROGRAAM</a></li>
+		 <li> <a href="#">CONTACT US</a></li>
+		 <li> <a href="#">ABOUT</a></li>
+	 </ul>
+ </nav>
+
+</html>
